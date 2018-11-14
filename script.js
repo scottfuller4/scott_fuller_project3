@@ -36,7 +36,7 @@ const breakup = {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'output text message'
+            textMessage: 'lets try this with a really long string and see what it looks like blah blah Lorem ipsum dolor amet paleo actually seitan, tattooed XOXO williamsburg knausgaard. Vinyl ennui DIY, hammock tote bag small batch selfies try-hard schlitz street art truffaut.'
         },
         {
             teach: 'love',
@@ -160,8 +160,16 @@ $(function() {
 
         //add a concatenated string of partner name, a random text message from the options in textMessageOption and the username
 
-        $('.generated-text').html(`<h2>${partnerName}, ${textMessageDisplay.textMessage}. ${userName}</h2>`)
+        $('.generated-text').html(`<h2 class="generated-text__content">${partnerName}, ${textMessageDisplay.textMessage}. ${userName}</h2>`)
 
         // shuffle the text message options
+    })
+
+    // when the user clicks the home screen, rotate the phone screen -90deg by adding the iphone-rotate class
+    $('.home').on('click', function(){
+        // console.log("you clicked the button");
+        $('.iphone').toggleClass('iphone-rotate');
+        //rotate the content on screen to be landscape
+        $('.generated-text').toggleClass('screen-rotate');
     })
 });
