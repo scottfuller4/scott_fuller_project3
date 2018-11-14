@@ -131,3 +131,92 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.8rem;
+  background: #bb91b5;
+  text-align: center; }
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.iphone {
+  padding: 50px 5px;
+  background: #f7f8fa;
+  border-radius: 30px;
+  position: relative; }
+
+.screen {
+  background-color: #3f74ca;
+  width: 205px;
+  height: 350px; }
+
+.iphone, .screen {
+  border: 2px solid #525c6b; }
+
+.btn {
+  border: 1px solid #525c6b;
+  padding: 0;
+  outline: none;
+  background-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: absolute; }
+
+.home {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 17.5px);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #525c6b; }
+
+.silence, .volume-up, .volume-down {
+  background: #525c6b;
+  width: 1px;
+  height: 30px;
+  left: -4px; }
+
+.silence {
+  height: 20px; }
+
+.volume-up {
+  top: 90px; }
+
+.volume-down {
+  top: 130px; }
+
+.sleep {
+  right: -4px;
+  background: #525c6b;
+  width: 1px;
+  height: 30px;
+  top: 90px; }
+
+.speaker {
+  width: 40px;
+  height: 1px;
+  top: 23px;
+  left: 43%; }
+
+.camera {
+  width: 8px;
+  height: 8px;
+  border-radius: 40%;
+  border: 2px solid #525c6b;
+  top: 20px;
+  left: 35%; }

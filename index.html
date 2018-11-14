@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Thank u, next</title>
 </head>
 <body>
@@ -16,14 +16,14 @@
         <section class="quiz">
             <form action="" class="quiz-form">
                 <fieldset>
-                    <p>What are your names?</p>
+                    <h3>What are your names?</h3>
                     <label for="userName">Your name</label>
                     <input type="text" id="userName" name="userName">
                     <label for="partnerName">Your partner's name</label>
                     <input type="text" id="partnerName" name="partnerName">
                 </fieldset>
                 <fieldset>
-                    <p>Why are you breaking up?</p>
+                    <h3>Why are you breaking up?</h3>
                     <label for="match">You aren't a match</label>
                     <input type="radio" id="match" value="match" name="breakUp">
                     <label for="song-laugh">The songs you wrote about them make you laugh</label>
@@ -34,7 +34,7 @@
                     <input type="radio" id="betterDiscussions" value="better-discussions" name="breakUp">
                 </fieldset>
                 <fieldset>
-                    <p>What did they teach you?</p>
+                    <h3>What did they teach you?</h3>
                     <label for="love">Love</label>
                     <input type="radio" id="love" value="love" name="teach">
                     <label for="patience">Patience</label>
@@ -43,14 +43,14 @@
                     <input type="radio" id="pain" value="pain" name="teach">
                 </fieldset>
                 <fieldset>
-                    <p>Who's breaking up with who?</p>
+                    <h3>Who's breaking up with who?</h3>
                     <label for="heart-breaker"><span class="capitalize">You're</span> breaking up with them</label>
                     <input type="radio" id="heart-breaker" value="true" name="heartBreak">
                     <label for="heart-broken"><span class="capitalize">They're</span> breaking up with you</label>
                     <input type="radio" id="heart-broken" value="false" name="heartBreak">
                 </fieldset>
                 <fieldset>
-                    <p>Are you grateful for your (future) ex?</p>
+                    <h3>Are you grateful for your (future) ex?</h3>
                     <label for="grateful-yes">Yes</label>
                     <input type="radio" id="grateful-yes" value="true" name="grateful">
                     <label for="grateful-no">No</label>
@@ -59,8 +59,21 @@
                 <input type="submit" value="Generate your text!">
             </form>
         </section>
-        <section class="generated-text">
-
+        <section class="phone">
+            <div class="iphone">
+                <span class="btn home" title="Home"></span>
+                <span class="btn silence" title="Silence Switch"></span>
+                <span class="btn volume-up" title="Volume Up"></span>
+                <span class="btn volume-down" title="Volume Down"></span>
+                <span class="btn sleep" title="Sleep"></span>
+                <span class="btn speaker" title="Speaker"></span>
+                <span class="btn camera" title="Camera"></span>
+                <div class="screen">
+                    <div class="generated-text">
+                        <!-- output goes here -->
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
