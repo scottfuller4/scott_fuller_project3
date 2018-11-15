@@ -261,7 +261,7 @@ const breakup = {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'all the single ladies, now put your hands up 🙌🙌🙌'
+            textMessage: 'all the single ladies, now put your hands up... 🙌🙌🙌'
         },
         {
             teach: 'love',
@@ -286,7 +286,7 @@ const breakup = {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'is it because I say \'uh oh spaghetti os\' when things go wrong?'
+            textMessage: 'is it because I say \'Uh Oh Spaghetti Os\' when things go wrong?'
         },
         //option 5
         {
@@ -872,6 +872,8 @@ const breakup = {
     ]
 };
 
+const breakupApp = {};
+
 $(function() {
 
     const getRandomIndex = function(array) {
@@ -886,6 +888,9 @@ $(function() {
         //clear the text field after the user submits the form
         const userName = $('input[name=userName]').val();
         const partnerName = $('input[name=partnerName]').val();
+
+        breakupApp.userName = userName;
+        breakupApp.partnerName = partnerName;
 
         if (userName === '') {
             alert("Please enter your name.");
@@ -923,13 +928,26 @@ $(function() {
             }
         }
 
+        breakupApp.textMessageOption = textMessageOption;
+        
         const textMessageDisplay = getRandomIndex(textMessageOption);
+        // breakupApp.textMessageDisplay = textMessageDisplay;
 
         //add a concatenated string of partner name, a random text message from the options in textMessageOption and the username
 
-        $('.generated-text').html(`<h2 class="generated-text__content">${partnerName}, ${textMessageDisplay.textMessage} ${userName}</h2>`)
+        $('.generated-text').html(`<h2 class="generated-text__content">${partnerName}, ${textMessageDisplay.textMessage} ${userName}</h2>`);
 
-        // shuffle the text message options
+        //after the text message displays, also display a shuffle button at the bottom of the phone
+        $('.btn__shuffle').removeClass('btn__none');
+    })
+
+    // on click of shuffle button
+    $('.btn__shuffle').on('click', function(){
+        //animate the phone to shake left and right
+        
+        // display a different textMessageOption
+        const shuffleTextMessage = getRandomIndex(breakupApp.textMessageOption);
+        $('.generated-text').html(`<h2 class="generated-text__content">${breakupApp.partnerName}, ${shuffleTextMessage.textMessage} ${breakupApp.userName}</h2>`);
     })
 
     // when the user clicks the home screen, rotate the phone screen -90deg by adding the iphone-rotate class

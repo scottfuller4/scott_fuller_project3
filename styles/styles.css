@@ -179,6 +179,14 @@ body {
   user-select: none;
   position: absolute; }
 
+.btn__shuffle {
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+.btn__none {
+  display: none; }
+
 .home {
   position: absolute;
   bottom: 10px;

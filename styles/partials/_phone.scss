@@ -32,6 +32,17 @@
     position: absolute;
 }
 
+.btn__shuffle {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+.btn__none {
+    display: none;
+}
+
 .home {
     position: absolute;
     bottom: 10px;
@@ -136,6 +147,8 @@
     border-radius: 0 0 0 100%;
     transform: rotate(-35deg);
 }
+
+
 
 .iphone-rotate {
     transform: rotate(-90deg);
