@@ -229,7 +229,7 @@ body {
   top: 0;
   right: 0;
   background: #007AFF;
-  margin: 20px 10px;
+  margin: 5px;
   text-align: left;
   color: white;
   padding: 10px;
@@ -298,4 +298,4 @@ body {
   position: absolute;
   top: 140px;
   left: 0;
-  width: 150%; }
+  max-width: 150%; }

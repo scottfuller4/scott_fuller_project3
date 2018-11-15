@@ -91,12 +91,13 @@
     top: 0;
     right: 0;
     background: #007AFF;
-    margin: 20px 10px;
+    margin: 5px;
     text-align: left;
     color: white;
     padding: 10px;
     border-radius: 20px;
     transition: all 0.2s;
+    // width: 95%;
     &__content {
         margin: 0;
         font-family: $phone-font;
@@ -148,5 +149,5 @@
     top: 140px;
     left: 0;
     // width: 330px;
-    width: 150%;
+    max-width: 150%;
 }
