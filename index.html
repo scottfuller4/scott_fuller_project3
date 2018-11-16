@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300" rel="stylesheet">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.4.1/css/all.css' integrity='sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz' crossorigin='anonymous'>
     <title>Thank u, next</title>
 </head>
@@ -79,7 +79,12 @@
                         </div>
                         <!-- output goes here -->
                     </div>
-                    <button class="btn btn__shuffle btn__none">Same same, but different?</button>
+                    <button class="btn btn__shuffle btn__none" id="btnShuffle">Different text? <i class="fas fa-arrow-circle-up"></i></button>
+                    <div class="audio audio-hidden">
+                        <audio controls>
+                            <source src="assets/thankunext.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
                 </div>
             </div>
         </section>

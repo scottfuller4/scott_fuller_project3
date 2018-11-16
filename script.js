@@ -306,6 +306,12 @@ const breakup = {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
+            textMessage: 'I love you like a brother.'
+        },
+        {
+            teach: 'patience',
+            heartBreaker: 'true',
+            grateful: 'true',
             textMessage: ''
         },
         //option 6
@@ -892,17 +898,15 @@ $(function() {
         breakupApp.userName = userName;
         breakupApp.partnerName = partnerName;
 
-        if (userName === '') {
-            alert("Please enter your name.");
+        //if the user doesn't enter anything, or enters spaces, alert them
+        if (userName === '' || partnerName === '') {
+            alert("Please enter you and your partner's name.");
+            return;
+        } else if (userName.includes(' ') || partnerName.includes(' ')) {
+            alert("Please enter alphanumeric characters only, no spaces.");
             return;
         } else {
             $('input[name=userName]').val('');
-        };
-
-        if (partnerName === '') {
-            alert("Please enter your partner's name.");
-            return;
-        } else {
             $('input[name=partnerName]').val('');
         };
 
@@ -939,22 +943,44 @@ $(function() {
 
         //after the text message displays, also display a shuffle button at the bottom of the phone
         $('.btn__shuffle').removeClass('btn__none');
+
+        if ($('.iphone').hasClass('iphone-rotate')) {
+            $('.btn__shuffle').addClass('btn__none');
+        };
     })
 
     // on click of shuffle button
     $('.btn__shuffle').on('click', function(){
         //animate the phone to shake left and right
-        
+        $('.iphone').addClass('iphone-shake');
+        //remove the class oh iphone shake after it runs so that it can be reused
+        setTimeout(function () {
+            $('.iphone').removeClass('iphone-shake');
+        }, 1000);
         // display a different textMessageOption
         const shuffleTextMessage = getRandomIndex(breakupApp.textMessageOption);
         $('.generated-text').html(`<h2 class="generated-text__content">${breakupApp.partnerName}, ${shuffleTextMessage.textMessage} ${breakupApp.userName}</h2>`);
+        // $('.iphone').removeClass('iphone-shake');
     })
 
-    // when the user clicks the home screen, rotate the phone screen -90deg by adding the iphone-rotate class
+    // when the user clicks the home button on the phone
     $('.home').on('click', function(){
-        // console.log("you clicked the button");
+        // rotate the phone screen -90deg by adding the iphone-rotate class
         $('.iphone').toggleClass('iphone-rotate');
-        //rotate the content on screen to be landscape
-        $('.generated-text').toggleClass('screen-rotate');
+        // hide the generated text
+        $('.generated-text').toggleClass('generated-text-hidden');
+
+        //if the phone is rotated, hide the shuffle button
+        if ($('.iphone').hasClass('iphone-rotate')) {
+            $('.btn__shuffle').addClass('btn__none');
+        };
+
+        //if the phone isnt rotated and it has content in generated-text__content, show the shuffle button
+        if (!$('.iphone').hasClass('iphone-rotate') && breakupApp.partnerName) {
+            $('.btn__shuffle').removeClass('btn__none');
+        };
+
+        // display the audio div
+        $('.audio').toggleClass('audio-hidden');
     })
 });

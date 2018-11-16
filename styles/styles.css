@@ -140,6 +140,9 @@ body {
   background: #bb91b5;
   text-align: center; }
 
+h1, h2 {
+  font-family: 'Permanent Marker', cursive; }
+
 .phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,7 +185,23 @@ body {
 .btn__shuffle {
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background: #f7f8fa;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .btn__shuffle i {
+    text-align: right;
+    color: #007AFF; }
 
 .btn__none {
   display: none; }
@@ -264,22 +283,6 @@ body {
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s; }
 
-@-webkit-keyframes color-change {
-  0% {
-    color: lightgray; }
-  50% {
-    color: gray; }
-  100% {
-    color: lightgray; } }
-
-@keyframes color-change {
-  0% {
-    color: lightgray; }
-  50% {
-    color: gray; }
-  100% {
-    color: lightgray; } }
-
 .generated-text::after {
   content: '';
   position: absolute;
@@ -307,3 +310,48 @@ body {
   top: 140px;
   left: 0;
   max-width: 150%; }
+
+.iphone-shake {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s; }
+
+.generated-text-hidden {
+  display: none; }
+
+.audio {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: relative;
+  top: 33%; }
+
+.audio-hidden {
+  display: none; }
+
+@-webkit-keyframes color-change {
+  0% {
+    color: lightgray; }
+  50% {
+    color: gray; }
+  100% {
+    color: lightgray; } }
+
+@keyframes color-change {
+  0% {
+    color: lightgray; }
+  50% {
+    color: gray; }
+  100% {
+    color: lightgray; } }
+
+@-webkit-keyframes shake {
+  10%, 30%, 50%, 70%, 90% {
+    margin-right: 100px; }
+  20%, 40%, 60%, 80% {
+    margin-right: -100px; } }
+
+@keyframes shake {
+  10%, 30%, 50%, 70%, 90% {
+    margin-right: 100px; }
+  20%, 40%, 60%, 80% {
+    margin-right: -100px; } }
