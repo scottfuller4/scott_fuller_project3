@@ -11,19 +11,25 @@
 </head>
 <body>
     <header>
-        <h1>"Thank u, next"</h1>
-        <h2>Breakup texts for your (future) ex</h2>
+        <h2>"Thank u, next"</h2>
+        <h1>Breakup texts for your (future) ex</h1>
     </header>
     <main>
         <section class="quiz">
             <form action="" class="quiz-form">
-                <fieldset>
-                    <h3>What are your names?</h3>
-                    <label for="userName">Your name</label>
-                    <input type="text" id="userName" name="userName">
-                    <label for="partnerName">Your partner's name</label>
-                    <input type="text" id="partnerName" name="partnerName">
-                </fieldset>
+                <div class="names">
+                    <fieldset>
+                        <div class="wrapper names-container">
+                            <h3>What are your names?</h3>
+                            <div class="names-container__inputs">
+                                <label for="userName">Your name</label>
+                                <input type="text" id="userName" name="userName">
+                                <label for="partnerName">Your partner's name</label>
+                                <input type="text" id="partnerName" name="partnerName">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
                 <fieldset>
                     <h3>Why are you breaking up?</h3>
                     <label for="match">You aren't a match</label>
@@ -89,7 +95,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="wrapper">
         <p>Inspired by "Thank u, next" by Ariana Grande</p>
     </footer>
 

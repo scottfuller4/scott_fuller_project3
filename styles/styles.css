@@ -138,10 +138,46 @@ html {
 body {
   font-size: 1.8rem;
   background: #bb91b5;
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto", sans-serif; }
 
-h1, h2 {
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto; }
+
+h1, h2, h3 {
   font-family: 'Permanent Marker', cursive; }
+
+header {
+  height: 100vh;
+  background-image: url(../assets/album.jpg);
+  background-size: cover;
+  background-repeat: none; }
+
+fieldset {
+  border: none;
+  padding: 50px 0; }
+  fieldset h3 {
+    font-size: 5rem; }
+
+.names-container {
+  border-left: 5px solid #b0d0d3;
+  border-top: 5px solid #b0d0d3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .names-container h3 {
+    width: 100%; }
+  .names-container__inputs {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .phone {
   display: -webkit-box;
