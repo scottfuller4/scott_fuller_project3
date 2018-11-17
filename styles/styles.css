@@ -139,7 +139,7 @@ body {
   font-size: 1.8rem;
   background: #bb91b5;
   text-align: center;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Questrial", sans-serif; }
 
 .wrapper {
   max-width: 1280px;
@@ -149,6 +149,10 @@ body {
 h1, h2, h3 {
   font-family: "Permanent Marker", cursive;
   margin: 0; }
+
+h1 {
+  font-family: "Questrial", sans-serif;
+  text-transform: capitalize; }
 
 header {
   height: 100vh;
@@ -185,7 +189,7 @@ header {
   .header-container h2 {
     font-size: 7.4rem; }
   .header-container h1 {
-    font-size: 2.8rem; }
+    font-size: 3rem; }
 
 .header-container::after {
   content: '';
@@ -304,7 +308,19 @@ fieldset {
   margin: 100px auto 50px auto; }
 
 input[type=submit] {
-  margin-bottom: 100px; }
+  font-family: "Questrial", sans-serif;
+  font-size: 3rem;
+  border: 3px solid #e3d0d8;
+  background: #bb91b5;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all; }
+
+input[type=submit]:hover {
+  -webkit-box-shadow: 5px -5px #e3d0d8;
+  box-shadow: 5px -5px #e3d0d8; }
 
 .phone {
   display: -webkit-box;
@@ -315,7 +331,8 @@ input[type=submit] {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  padding: 100px 0; }
 
 .iphone {
   padding: 50px 5px;
@@ -518,3 +535,9 @@ input[type=submit] {
     margin-right: 100px; }
   20%, 40%, 60%, 80% {
     margin-right: -100px; } }
+
+footer {
+  background: #e3d0d8;
+  padding: 25px 0; }
+  footer p {
+    margin: 0; }

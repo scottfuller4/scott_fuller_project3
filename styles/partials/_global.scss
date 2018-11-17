@@ -10,6 +10,7 @@ $indigo: #3f74ca;
 
 $phone-font: 'Roboto', sans-serif;
 $heading-font: 'Permanent Marker', cursive;
+$body-font: 'Questrial', sans-serif;
 
 html {
     font-size: 62.5%;
@@ -19,7 +20,7 @@ body {
     font-size: 1.8rem;
     background: $background-color;
     text-align: center;
-    font-family: $phone-font;
+    font-family: $body-font;
 }
 
 .wrapper {
@@ -32,4 +33,9 @@ body {
 h1, h2, h3 {
     font-family: $heading-font;
     margin: 0;
+}
+
+h1 {
+    font-family: $body-font;
+    text-transform: capitalize;
 }

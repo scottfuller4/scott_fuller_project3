@@ -101,5 +101,15 @@ fieldset {
 
 //submit styles
 input[type=submit] {
-    margin-bottom: 100px;
+   font-family: $body-font;
+   font-size: 3rem;
+   border: 3px solid $background-shade;
+   background: $background-color;
+   margin-bottom: 50px;
+   padding: 10px 20px;
+   transition: 0.2s all;
+}
+
+input[type=submit]:hover {
+    box-shadow: 5px -5px $background-shade;
 }
