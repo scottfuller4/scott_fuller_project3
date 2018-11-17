@@ -11,7 +11,7 @@
     position: relative;
     transition: all 0.5s;
     &__screen {
-        background-color: silver;
+        background-color: $background-shade;
         width: 205px;
         height: 350px;
         position: relative;

@@ -68,7 +68,7 @@ const breakup = {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'if they say it takes a month for each year you\'ve been together to get over someone, why am I already over you?'
+            textMessage: 'if they say it takes a month for each year you\'ve been together to get over someone, how am I already over you?'
         },
         //option 5
         {
@@ -407,19 +407,19 @@ const breakup = {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'love is just a social construct, ya know?'
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'it feels like it would be better to die alone than spend another day with you.'
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'Im keep the damn dog.'
         },
         //option 12
         {
@@ -438,7 +438,7 @@ const breakup = {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'remember the good times? cuz I dont.'
         }
     ],
     engagement: [
@@ -446,216 +446,228 @@ const breakup = {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'I\'ve loved getting to know you but I think we should just be friends.'
+            textMessage: 'I miss being single.'
         },
         {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'you\'re great, but if we were on the Bachelor I wouldn\'t give you a rose.'
+            textMessage: 'I was tying my shoe but you thought I was proposing so I went with it.'
         },
         {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'it\'s over. I have a friend I think you might like though...'
+            textMessage: 'can we just pretend we never happened?'
         },
         //option 2
         {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'you were a great rebound but I\'m looking for something more serious.'
+            textMessage: 'I figure its better we break up now over getting divorced later.'
         },
         {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'high school sweethearts aren\'t meant to last past high school. I\'m dropping off your stuff tonight.'
+            textMessage: 'I only proposed because my parents have been pressuring me to get married.'
         },
         {
             teach: 'love',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'I\'ll always remember you as my first love. And as my first ex.'
+            textMessage: 'I feel like while Ive been moving forward, youve been standing still.'
         },
         //option 3
         {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'you\'re right, we aren\'t a match. Thx for the good times.'
+            textMessage: 'youre a piece of shit and I regret ever meeting you.'
         },
         {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'you can\'t leave me!!!!'
+            textMessage: 'u up? i miss u.'
+        },
+        {
+            teach: 'love',
+            heartBreaker: 'false',
+            grateful: 'true',
+            textMessage: 'why do you think it was me who slashed your tires???'
         },
         //option 4
         {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'you may have been my first love, but at least I don\'t have to listen to you cry to the Moana soundtrack anymore.'
+            textMessage: 'Im so glad we got a prenup.'
         },
         {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'I\'ll always remember falling in love with you. But I can never remember why.'
+            textMessage: 'youre a great example of the type of person I shouldnt date.'
         },
         {
             teach: 'love',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'if they say it takes a month for each year you\'ve been together to get over someone, why am I already over you?'
+            textMessage: 'are you seriously ghosting me!?!?!?!'
         },
         //option 5
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'has anyone ever told u that u remind them of Steve Buschemi?'
+            textMessage: 'do you remember what it feels like to be happy?'
         },
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'why did the chicken cross the road? To get away from you! We\'re done.'
+            textMessage: 'Ive always thought your voice was annoying.'
         },
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'what do Britney and Justin, Brad and Angelina and me and you have in common? We\'re all broken up.'
+            textMessage: 'Im going to get my own apartment.'
         },
         //option 6
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'a psychic told me that we aren\'t meant for eachother... and I think she\'s right.'
+            textMessage: 'I only started dating you to get closer to your best friend.'
         },
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'Maybe someday I\'ll see you at a table in a restaurant in France. Perphaps we will both be with our future families. We\'d smile and wave but go our separate ways...Please, have a good life.'
+            textMessage: 'my friend dared me to ask you out.'
+        },
+        {
+            teach: 'patience',
+            heartBreaker: 'true',
+            grateful: 'false',
+            textMessage: 'thank you for teaching me that I need to surround myself with better people.'
         },
         //option 7
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'I\'ve got no tears left to cry, say goodnight and go.'
+            textMessage: 'I thought we both knew this wasnt serious?'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'who dis?'
+            textMessage: 'umm what? Thats not my name... this is'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'I knew we needed to break up when you told me you hate dogs.'
+            textMessage: ''
         },
         //option 8
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'I never even liked u anyway.'
+            textMessage: ''
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'is it hot in here or is this relationship suffocating me?'
+            textMessage: ''
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'roses are red, Violets are blue. Garbage is dumped, now so are you.'
+            textMessage: ''
         },
         //option 9
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'it\'s not you...it\'s your taste in music.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'sorry I stopped contacting you, I just don\'t like you anymore.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'my cat doesn\'t like you... and neither do I.'
+            textMessage: ''
         },
         //option 10
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'it\'s not because I don\'t like you, it\'s because I hate you.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'there\'s something I\'ve been wanting to say since the day we met.....goodbye.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: 'want to know a joke? Our relationship.'
+            textMessage: ''
         },
         //option 11
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'can we still share a netflix account?'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'your hair doesn\'t look sexy pushed back.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: 'boy bye.'
+            textMessage: ''
         },
         //option 12
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'this is the part when I say I don’t want ya. I\'m stronger than I\'ve been before. This is the part when I break free.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'suck a bag of lemons.'
+            textMessage: ''
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: 'it\'s not me, it\'s you.'
+            textMessage: ''
         }
     ],
     betterDiscussions: [

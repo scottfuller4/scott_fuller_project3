@@ -1,7 +1,7 @@
-$backgroundColor: #bb91b5;
+$background-color: #bb91b5;
 $white: #fff;
-$accentColor: #b0d0d3;
-$backgroundShade: #ba9ab5;
+$accent-color: #827081;
+$background-shade: #e3d0d8;
 
 //specific colors for phone
 $athens-gray: #f7f8fa;
@@ -9,6 +9,7 @@ $shuttle-gray: #525c6b;
 $indigo: #3f74ca;
 
 $phone-font: 'Roboto', sans-serif;
+$heading-font: 'Permanent Marker', cursive;
 
 html {
     font-size: 62.5%;
@@ -16,21 +17,23 @@ html {
 
 body {
     font-size: 1.8rem;
-    background: $backgroundColor;
+    background: $background-color;
     text-align: center;
     font-family: $phone-font;
 }
 
 .wrapper {
     max-width: 1280px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+    // border: 2px blue solid
 }
 
 h1, h2, h3 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: $heading-font;
+    margin: 0;
 }
 
-h1, h2 {
-    // text-shadow: 3px 3px $accentColor;
+h3 {
+    // text-shadow: 1px 1px $background-shade;
 }

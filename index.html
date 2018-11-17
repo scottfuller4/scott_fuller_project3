@@ -22,48 +22,92 @@
                         <div class="wrapper names-container">
                             <h3>What are your names?</h3>
                             <div class="names-container__inputs">
-                                <label for="userName">Your name</label>
-                                <input type="text" id="userName" name="userName">
-                                <label for="partnerName">Your partner's name</label>
-                                <input type="text" id="partnerName" name="partnerName">
+                                <div class="user-name">
+                                    <input type="text" id="userName" name="userName" class="user-name-input">
+                                    <label for="userName"><i class="fas fa-arrow-left"></i> Your name</label>
+                                </div>
+                                <div class="partner-name">
+                                    <label for="partnerName">Your partner's name <i class="fas fa-arrow-right"></i></label>
+                                    <input type="text" id="partnerName" name="partnerName">
+                                </div>
                             </div>
                         </div>
                     </fieldset>
                 </div>
-                <fieldset>
-                    <h3>Why are you breaking up?</h3>
-                    <label for="match">You aren't a match</label>
-                    <input type="radio" id="match" value="match" name="breakUp">
-                    <label for="song-laugh">The songs you wrote about them make you laugh</label>
-                    <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
-                    <label for="engagement">You rushed into an engagement</label>
-                    <input type="radio" id="engagement" value="engagement" name="breakUp">
-                    <label for="better-discussions">You met someone else who has better discussions</label>
-                    <input type="radio" id="betterDiscussions" value="better-discussions" name="breakUp">
-                </fieldset>
-                <fieldset>
-                    <h3>What did they teach you?</h3>
-                    <label for="love">Love</label>
-                    <input type="radio" id="love" value="love" name="teach">
-                    <label for="patience">Patience</label>
-                    <input type="radio" id="patience" value="patience" name="teach">
-                    <label for="pain">Pain</label>
-                    <input type="radio" id="pain" value="pain" name="teach">
-                </fieldset>
-                <fieldset>
-                    <h3>Who's breaking up with who?</h3>
-                    <label for="heart-breaker"><span class="capitalize">You're</span> breaking up with them</label>
-                    <input type="radio" id="heart-breaker" value="true" name="heartBreak">
-                    <label for="heart-broken"><span class="capitalize">They're</span> breaking up with you</label>
-                    <input type="radio" id="heart-broken" value="false" name="heartBreak">
-                </fieldset>
-                <fieldset>
-                    <h3>Are you grateful for your (future) ex?</h3>
-                    <label for="grateful-yes">Yes</label>
-                    <input type="radio" id="grateful-yes" value="true" name="grateful">
-                    <label for="grateful-no">No</label>
-                    <input type="radio" id="grateful-no" value="false" name="grateful">
-                </fieldset>
+                <div class="breakup">
+                    <fieldset>
+                        <div class="wrapper breakup-container">
+                            <h3>Why are you breaking up?</h3>
+                            <div class="breakup-container__inputs">
+                                <div class="match breakup-container__option">
+                                    <img src="./assets/heart.svg" alt="">
+                                    <!-- Broken Heart by Gabriele Malaspina from the Noun Project -->
+                                    <label for="match">You aren't a match</label>
+                                    <input type="radio" id="match" value="match" name="breakUp">
+                                </div>
+                                <div class="song-laugh breakup-container__option">
+                                    <img src="./assets/microphone.svg" alt="">
+                                    <!-- microphones by Panda Icons from the Noun Project -->
+                                    <label for="song-laugh">The songs you wrote about them make you laugh</label>
+                                    <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
+                                </div>
+                                <div class="engagement breakup-container__option">
+                                    <img src="./assets/ring.svg" alt="">
+                                    <!-- Ring by Panda Icons from the Noun Project -->
+                                    <label for="engagement">You rushed into an engagement</label>
+                                    <input type="radio" id="engagement" value="engagement" name="breakUp">
+                                </div>
+                                <div class="better-discussions breakup-container__option">
+                                    <img src="./assets/text.svg" alt="">
+                                    <!-- message by Gabriele Malaspina from the Noun Project -->
+                                    <label for="better-discussions">You met someone else who has better discussions</label>
+                                    <input type="radio" id="betterDiscussions" value="better-discussions" name="breakUp">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="teachings">
+                    <fieldset>
+                        <div class="wrapper">
+                            <div class="teachings-container">
+                                <h3>What did they teach you?</h3>
+                                <label for="love">Love</label>
+                                <input type="radio" id="love" value="love" name="teach">
+                                <label for="patience">Patience</label>
+                                <input type="radio" id="patience" value="patience" name="teach">
+                                <label for="pain">Pain</label>
+                                <input type="radio" id="pain" value="pain" name="teach">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="heartbreak">
+                    <fieldset>
+                        <div class="wrapper">
+                            <div class="heartbreak-container">
+                                <h3>Who's breaking up with who?</h3>
+                                <label for="heart-breaker"><span class="capitalize">You're</span> breaking up with them</label>
+                                <input type="radio" id="heart-breaker" value="true" name="heartBreak">
+                                <label for="heart-broken"><span class="capitalize">They're</span> breaking up with you</label>
+                                <input type="radio" id="heart-broken" value="false" name="heartBreak">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="grateful">
+                    <fieldset>
+                        <div class="wrapper">
+                            <div class="grateful-container">
+                                <h3>Are you grateful for your (future) ex?</h3>
+                                <label for="grateful-yes">Yes</label>
+                                <input type="radio" id="grateful-yes" value="true" name="grateful">
+                                <label for="grateful-no">No</label>
+                                <input type="radio" id="grateful-no" value="false" name="grateful">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
                 <input type="submit" value="Generate your text!">
             </form>
         </section>
