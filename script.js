@@ -81,7 +81,7 @@ const breakup = {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: 'why did the chicken cross the road? To get away from you! We\'re done.'
+            textMessage: 'we\'re done.'
         },
         {
             teach: 'patience',
@@ -301,107 +301,106 @@ const breakup = {
             grateful: 'true',
             textMessage: 'thank u, next.'
         },
-        //stopped here
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'true',
             textMessage: 'I love you like a brother.'
         },
-        {
-            teach: 'patience',
-            heartBreaker: 'true',
-            grateful: 'true',
-            textMessage: ''
-        },
         //option 6
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'it\'s not me, its DEF you.'
         },
         {
             teach: 'patience',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'can you grab a kit-kat? cuz we need a gd break.'
+        },
+        {
+            teach: 'patience',
+            heartBreaker: 'true',
+            grateful: 'false',
+            textMessage: 'I think we\'d be better as friends who say hi when they pass on the street.'
         },
         //option 7
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'you\'ll never find someone like me again.'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'can we still be friends?'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'ding dong the witch is dead!! Bye.'
         },
         //option 8
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'I did something bad on our wedding night...'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'when did I start dating a fuckboy?'
         },
         {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'it\'s okay, my friends hate you too.'
         },
         //option 9
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'Im so happy we\'ll be in eachothers lives as friends!'
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'if you ever are in the same room as me again... leave.'
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'I had the worst taste when we started dating...'
         },
         //option 10
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'ah sorry ive been rly busy the last two months, dunno when we\'ll be able to hang.'
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'ive started dreading when you get off work. This isn\'t working.'
         },
         {
             teach: 'pain',
             heartBreaker: 'true',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'we need to talk.'
         },
         //option 11
         {
@@ -427,13 +426,13 @@ const breakup = {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'ill always remember you as the worst person ive ever dated.'
         },
         {
             teach: 'pain',
             heartBreaker: 'false',
             grateful: 'false',
-            textMessage: ''
+            textMessage: 'you think we\'re dating? I thought we\'ve been hanging out as friends...'
         },
         {
             teach: 'pain',
@@ -900,7 +899,7 @@ $(function() {
 
         //if the user doesn't enter anything, or enters spaces, alert them
         if (userName === '' || partnerName === '') {
-            alert("Please enter you and your partner's name.");
+            alert("Please enter your/your partner's name.");
             return;
         } else if (userName.includes(' ') || partnerName.includes(' ')) {
             alert("Please enter alphanumeric characters only, no spaces.");
