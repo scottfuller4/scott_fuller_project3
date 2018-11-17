@@ -39,3 +39,7 @@ h1 {
     font-family: $body-font;
     text-transform: capitalize;
 }
+
+label:hover {
+    cursor: pointer;
+}

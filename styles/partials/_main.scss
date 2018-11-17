@@ -58,6 +58,8 @@ fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    margin: 0 10px;
     img {
         width: 100px;
 
@@ -103,7 +105,7 @@ fieldset {
 input[type=submit] {
    font-family: $body-font;
    font-size: 3rem;
-   border: 3px solid $background-shade;
+   border: 5px solid $background-shade;
    background: $background-color;
    margin-bottom: 50px;
    padding: 10px 20px;
@@ -113,3 +115,68 @@ input[type=submit] {
 input[type=submit]:hover {
     box-shadow: 5px -5px $background-shade;
 }
+
+// custom radio buttons
+ /* Customize the label (the container) */
+.select {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.select input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  bottom: -50px;
+  left: calc(50% - 12.5px);
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 30%;
+}
+
+/* On mouse-over, add a grey background color */
+.select:hover input ~ .checkmark {
+  background-color: $background-shade;
+}
+
+/* When the radio button is checked, add a blue background */
+.select input:checked ~ .checkmark, {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.select:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.select input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.select .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  z-index: 2;
+} 

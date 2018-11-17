@@ -14,7 +14,7 @@
         <div class="wrapper">
             <div class="header-container">
                 <h2>"Thank u, next"</h2>
-                <h1>Breakup text generator for your (soon-to-be) ex</h1>
+                <h1>Breakup text generator for your (Soon-To-Be) ex</h1>
             </div>
         </div>
     </header>
@@ -46,26 +46,38 @@
                                 <div class="match breakup-container__option">
                                     <img src="./assets/heart.svg" alt="">
                                     <!-- Broken Heart by Gabriele Malaspina from the Noun Project -->
-                                    <label for="match">You aren't a match</label>
-                                    <input type="radio" id="match" value="match" name="breakUp">
+                                    <div class="select">
+                                        <input type="radio" id="match" value="match" name="breakUp">
+                                        <span class="checkmark"></span>
+                                        <label for="match">You aren't a match</label>
+                                    </div>
                                 </div>
                                 <div class="song-laugh breakup-container__option">
                                     <img src="./assets/microphone.svg" alt="">
                                     <!-- microphones by Panda Icons from the Noun Project -->
-                                    <label for="song-laugh">The songs you wrote about them make you laugh</label>
-                                    <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
+                                    <div class="select">
+                                        <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
+                                        <span class="checkmark"></span>
+                                        <label for="song-laugh">The songs you wrote about them make you laugh</label>
+                                    </div>
                                 </div>
                                 <div class="engagement breakup-container__option">
                                     <img src="./assets/ring.svg" alt="">
                                     <!-- Ring by Panda Icons from the Noun Project -->
-                                    <label for="engagement">You rushed into an engagement</label>
-                                    <input type="radio" id="engagement" value="engagement" name="breakUp">
+                                    <div class="select">
+                                        <input type="radio" id="engagement" value="engagement" name="breakUp">
+                                        <span class="checkmark"></span>
+                                        <label for="engagement">You rushed into an engagement</label>
+                                    </div>
                                 </div>
                                 <div class="better-discussions breakup-container__option">
                                     <img src="./assets/text.svg" alt="">
                                     <!-- message by Gabriele Malaspina from the Noun Project -->
-                                    <label for="better-discussions">You met someone else who has better discussions</label>
-                                    <input type="radio" id="betterDiscussions" value="better-discussions" name="breakUp">
+                                    <div class="select">
+                                        <input type="radio" id="better-discussions" value="better-discussions" name="breakUp">
+                                        <span class="checkmark"></span>
+                                        <label for="better-discussions">You met someone else who has better discussions</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -145,11 +157,13 @@
     </main>
     <footer>
         <div class="wrapper">
+            <p>&copy; 2018 <a href="https://twitter.com/scott_fuller">Scott Fuller</a></p>
             <p>Album art, music & inspiration from "Thank u, next" by Ariana Grande</p>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

@@ -911,10 +911,16 @@ $(function() {
 
         //if the user doesn't enter anything, or enters spaces, alert them
         if (userName === '' || partnerName === '') {
-            alert("Please enter your/your partner's name.");
+            swal({
+                text: "Please enter your/your partner's name.",
+                icon: "error",
+            });
             return;
         } else if (userName.includes(' ') || partnerName.includes(' ')) {
-            alert("Please enter alphanumeric characters only, no spaces.");
+            swal({
+                text: "Please enter alphanumeric characters only, no spaces.", 
+                icon: "error",
+            });
             return;
         } else {
             $('input[name=userName]').val('');

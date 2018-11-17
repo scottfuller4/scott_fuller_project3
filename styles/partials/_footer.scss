@@ -2,6 +2,10 @@ footer {
     background: $background-shade;
     padding: 25px 0;
     p {
-        margin: 0;
+        margin: 5px 0;
+        a {
+            text-decoration: none;
+            color: $background-color;
+        }
     }
 }

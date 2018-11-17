@@ -33,12 +33,13 @@ header {
     border-radius: 100px;
     border: 10px solid $white;
     position: relative;
-    text-shadow: 2px 2px $background-shade;
     h2 {
         font-size: 7.4rem;
+        text-shadow: 2px 2px $background-shade;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
     }
 }
 
