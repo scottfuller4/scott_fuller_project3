@@ -154,7 +154,51 @@ header {
   height: 100vh;
   background-image: url(../assets/album.jpg);
   background-size: cover;
-  background-repeat: none; }
+  background-repeat: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.header-container {
+  width: 700px;
+  background: rgba(187, 145, 181, 0.92);
+  margin: 5px;
+  color: #212121;
+  padding: 50px 50px 70px 50px;
+  border-radius: 100px;
+  border: 10px solid #fff;
+  position: relative;
+  text-shadow: 2px 2px #e3d0d8; }
+  .header-container h2 {
+    font-size: 7.4rem; }
+  .header-container h1 {
+    font-size: 2.8rem; }
+
+.header-container::after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  bottom: -19px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 0 0 0 100%;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
 
 fieldset {
   border: none;
@@ -252,7 +296,7 @@ fieldset {
     width: 60%; }
 
 .grateful-container {
-  width: 50%;
+  width: 600px;
   border: 5px solid #e3d0d8;
   padding: 50px 0;
   -webkit-box-shadow: 10px -10px #e3d0d8, 20px -20px #e3d0d8, 30px -30px #e3d0d8, 40px -40px #e3d0d8, 50px -50px #e3d0d8;
@@ -449,19 +493,19 @@ input[type=submit] {
 
 @-webkit-keyframes color-change {
   0% {
-    color: lightgray; }
+    color: #fff; }
   50% {
     color: gray; }
   100% {
-    color: lightgray; } }
+    color: #fff; } }
 
 @keyframes color-change {
   0% {
-    color: lightgray; }
+    color: #fff; }
   50% {
     color: gray; }
   100% {
-    color: lightgray; } }
+    color: #fff; } }
 
 @-webkit-keyframes shake {
   10%, 30%, 50%, 70%, 90% {

@@ -194,13 +194,13 @@
 
 @keyframes color-change {
     0% { 
-        color: lightgray;
+        color: $white;
     }
     50% { 
         color: gray;
     }
     100% {
-        color: lightgray;
+        color: $white;
     }
 }
 
