@@ -572,7 +572,7 @@ const breakup = {
             teach: 'patience',
             heartBreaker: 'false',
             grateful: 'true',
-            textMessage: ''
+            textMessage: 'sometimes things just take way too much of my energy... like you. goodbye.'
         },
         //option 8
         {

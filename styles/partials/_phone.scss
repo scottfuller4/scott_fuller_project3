@@ -183,10 +183,10 @@
 .audio {
     transform: rotate(90deg);
     position: relative;
-    top: 33%;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
+    top: 42%;
+    audio {
+        max-width: 100%;
+    }
 }
 
 .audio-hidden {

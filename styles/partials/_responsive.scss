@@ -1,0 +1,153 @@
+@media (max-width: 1010px) {
+    .breakup-container__inputs {
+        flex-wrap: wrap;
+    }
+
+    .breakup-container__option {
+        width: calc(50% - 20px);
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 836px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .names {
+        background: linear-gradient(10deg, $background-shade 70%, $background-color 30%);
+    }
+
+    .names-container .names-container__inputs {
+        .user-name {
+            margin-left: 25px;
+        }
+        .partner-name {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 685px) {
+    .teachings {
+        background: linear-gradient(-70deg, $background-shade 0%, $background-shade 70%, $background-color 70%, $background-color 100%);
+        &-container {
+            width: 70%;
+        }
+    }
+    
+    .teachings-inputs {
+        display: flex;
+        flex-direction: column;
+        input[type=radio] + label {
+            background-position: right top;
+        }
+        label {
+            padding-right: 30px;
+        }
+    }
+
+    .heartbreak {
+        background: linear-gradient(-70deg, $background-color 0%, $background-color 30%, $background-shade 30%, $background-shade 100%);
+        &-container {
+            width: 70%;
+        }
+    }
+
+    .grateful-container {
+        width: 80%;
+        box-shadow: 10px -10px $background-shade, 20px -20px $background-shade, 30px -30px $background-shade, 40px -40px $background-shade;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 653px) {
+    fieldset {
+        padding: 50px 0;
+        h3 {
+            font-size: 4rem;
+        }
+    }
+
+    .names-container .names-container__inputs input {
+        width: 200px;
+    }
+
+    .names-container .names-container__inputs {
+        .user-name, .partner-name {
+            margin-left: 0;
+        }
+        .main-label {
+            display: none;
+        }
+    }
+
+    .hidden-label {
+        display: inline-block;
+    }
+
+    .breakup-container__option {
+        width: 100%;
+    }
+}
+
+@media (max-width: 505px) {
+    fieldset h3 {
+        font-size: 3.5rem;
+    }
+
+    .names {
+        background: linear-gradient(10deg, $background-shade 80%, $background-color 20%);
+    }
+
+    .names-container {
+        justify-content: center;
+        padding: 50px 0 20px 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    
+    .user-name, .partner-name {
+        display: flex;
+        flex-direction: column;
+        i {
+            display: none;
+        }
+        input {
+            margin: 5px 0 10px 0;
+            text-align: center;
+        }
+    }
+
+    .teachings {
+        background: linear-gradient(-70deg, $background-shade 0%, $background-shade 85%, $background-color 85%, $background-color 100%);
+        &-container {
+            width: 85%;
+        }
+    }
+
+    .heartbreak {
+        background: linear-gradient(-70deg, $background-color 0%, $background-color 15%, $background-shade 15%, $background-shade 100%);
+        &-container {
+            width: 85%;
+        }
+    }
+
+    .grateful-container {
+        box-shadow: 10px -10px $background-shade, 20px -20px $background-shade, 30px -30px $background-shade;
+    }
+
+    input[type=submit] {
+        font-size: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .iphone-rotate {
+        transform: rotate(0deg);
+    }
+
+    .audio {
+        transform: rotate(0deg);
+    }
+}

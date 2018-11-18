@@ -31,8 +31,9 @@
                                     <label for="userName"><i class="fas fa-arrow-left"></i> Your name</label>
                                 </div>
                                 <div class="partner-name">
-                                    <label for="partnerName">Your partner's name <i class="fas fa-arrow-right"></i></label>
+                                    <label for="partnerName" class="main-label">Your partner's name <i class="fas fa-arrow-right"></i></label>
                                     <input type="text" id="partnerName" name="partnerName">
+                                    <label for="partnerName" class="hidden-label"><i class="fas fa-arrow-left"></i>Your partner's name </label>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +49,6 @@
                                     <!-- Broken Heart by Gabriele Malaspina from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="match" value="match" name="breakUp">
-                                        <!-- <span class="checkmark"></span> -->
                                         <label for="match">You aren't a match</label>
                                     </div>
                                 </div>
@@ -57,7 +57,6 @@
                                     <!-- microphones by Panda Icons from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
-                                        <!-- <span class="checkmark"></span> -->
                                         <label for="song-laugh">The songs you wrote about them make you laugh</label>
                                     </div>
                                 </div>
@@ -66,7 +65,6 @@
                                     <!-- Ring by Panda Icons from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="engagement" value="engagement" name="breakUp">
-                                        <!-- <span class="checkmark"></span> -->
                                         <label for="engagement">You rushed into an engagement</label>
                                     </div>
                                 </div>
@@ -75,7 +73,6 @@
                                     <!-- message by Gabriele Malaspina from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="better-discussions" value="better-discussions" name="breakUp">
-                                        <!-- <span class="checkmark"></span> -->
                                         <label for="better-discussions">You met someone else who has better discussions</label>
                                     </div>
                                 </div>
@@ -88,12 +85,14 @@
                         <div class="wrapper">
                             <div class="teachings-container">
                                 <h3>What did they teach you?</h3>
-                                <input type="radio" id="love" value="love" name="teach">
-                                <label for="love">Love</label>
-                                <input type="radio" id="patience" value="patience" name="teach">
-                                <label for="patience">Patience</label>
-                                <input type="radio" id="pain" value="pain" name="teach">
-                                <label for="pain">Pain</label>
+                                <div class="teachings-inputs">
+                                    <input type="radio" id="love" value="love" name="teach">
+                                    <label for="love">Love</label>
+                                    <input type="radio" id="patience" value="patience" name="teach">
+                                    <label for="patience">Patience</label>
+                                    <input type="radio" id="pain" value="pain" name="teach">
+                                    <label for="pain">Pain</label>
+                                </div>
                             </div>
                         </div>
                     </fieldset>

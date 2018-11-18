@@ -48,9 +48,14 @@ fieldset {
     }
 }
 
+.hidden-label {
+    display: none;
+}
+
 //Breakup reason styles
 .breakup-container__inputs {
     display: flex;
+    justify-content: space-around;
 }
 
 .breakup-container__option {
@@ -102,6 +107,9 @@ fieldset {
     padding: 50px 0;
     box-shadow: 10px -10px $background-shade, 20px -20px $background-shade, 30px -30px $background-shade, 40px -40px $background-shade, 50px -50px $background-shade;
     margin: 100px auto 50px auto;
+    h3 {
+            padding: 0 20px;
+    }
 }
 
 //submit styles
@@ -133,7 +141,6 @@ input[type=radio] + label {
     padding-left: 25px;
     // background-size: 20px;
     margin: 20px 20px 0 20px;
-    font-size: 2rem;
 }
 
 input[type=radio]:checked + label {
