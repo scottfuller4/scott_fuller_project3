@@ -279,10 +279,11 @@ fieldset {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin: 0 10px;
-  border: 2px solid blue; }
+  margin: 0 10px; }
   .breakup-container__option img {
     width: 100px; }
+  .breakup-container__option .select {
+    width: 100%; }
 
 .teachings {
   background: -webkit-linear-gradient(160deg, #e3d0d8 0%, #e3d0d8 60%, #bb91b5 60%, #bb91b5 100%);
@@ -344,11 +345,13 @@ input[type=radio] + label {
 
 input[type=radio]:checked + label {
   background: url(../assets/checkbox.svg) left top no-repeat;
-  background-size: 20px; }
+  background-size: 22px; }
 
 .breakup-container__option input[type=radio] + label {
-  background-position: left bottom;
-  line-height: 3rem; }
+  background-position: bottom center;
+  line-height: 3rem;
+  margin: 0;
+  padding-bottom: 30px; }
 
 .phone {
   display: -webkit-box;

@@ -60,10 +60,12 @@ fieldset {
     align-items: center;
     justify-content: space-between;
     margin: 0 10px;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     img {
         width: 100px;
-
+    }
+    .select {
+        width: 100%;
     }
 }
 
@@ -137,11 +139,13 @@ input[type=radio] + label {
 input[type=radio]:checked + label {
     // Checkbox by Arthur Shlain from the Noun Project
     background: url(../assets/checkbox.svg) left top no-repeat;
-    background-size: 20px;
+    background-size: 22px;
     // width: 25px;
 }
 
 .breakup-container__option input[type=radio] + label {
-    background-position: left bottom;
+    background-position: bottom center;
     line-height: 3rem;
+    margin: 0;
+    padding-bottom: 30px;
 }
