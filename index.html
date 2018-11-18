@@ -18,6 +18,7 @@
             </div>
         </div>
     </header>
+    
     <main>
         <section class="quiz">
             <form action="" class="quiz-form">
@@ -31,9 +32,9 @@
                                     <label for="userName"><i class="fas fa-arrow-left"></i> Your name</label>
                                 </div>
                                 <div class="partner-name">
-                                    <label for="partnerName" class="main-label">Your partner's name <i class="fas fa-arrow-right"></i></label>
+                                    <label for="partnerName" class="main-label">Your partner's name<i class="fas fa-arrow-right"></i></label>
                                     <input type="text" id="partnerName" name="partnerName">
-                                    <label for="partnerName" class="hidden-label"><i class="fas fa-arrow-left"></i>Your partner's name </label>
+                                    <label for="partnerName" class="hidden-label"><i class="fas fa-arrow-left"></i>Your partner's name</label>
                                 </div>
                             </div>
                         </div>
@@ -47,34 +48,26 @@
                                 <div class="match breakup-container__option">
                                     <img src="./assets/heart.svg" alt="">
                                     <!-- Broken Heart by Gabriele Malaspina from the Noun Project -->
-                                    <div class="select">
-                                        <input type="radio" id="match" value="match" name="breakUp">
-                                        <label for="match">You aren't a match</label>
-                                    </div>
+                                    <input type="radio" id="match" value="match" name="breakUp">
+                                    <label for="match">You aren't a match</label>
                                 </div>
                                 <div class="song-laugh breakup-container__option">
                                     <img src="./assets/microphone.svg" alt="">
                                     <!-- microphones by Panda Icons from the Noun Project -->
-                                    <div class="select">
-                                        <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
-                                        <label for="song-laugh">The songs you wrote about them make you laugh</label>
-                                    </div>
+                                    <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
+                                    <label for="song-laugh">The songs you wrote about them make you laugh</label>
                                 </div>
                                 <div class="engagement breakup-container__option">
                                     <img src="./assets/ring.svg" alt="">
                                     <!-- Ring by Panda Icons from the Noun Project -->
-                                    <div class="select">
-                                        <input type="radio" id="engagement" value="engagement" name="breakUp">
-                                        <label for="engagement">You rushed into an engagement</label>
-                                    </div>
+                                    <input type="radio" id="engagement" value="engagement" name="breakUp">
+                                    <label for="engagement">You rushed into an engagement</label>
                                 </div>
                                 <div class="better-discussions breakup-container__option">
                                     <img src="./assets/text.svg" alt="">
                                     <!-- message by Gabriele Malaspina from the Noun Project -->
-                                    <div class="select">
-                                        <input type="radio" id="better-discussions" value="better-discussions" name="breakUp">
-                                        <label for="better-discussions">You met someone else who has better discussions</label>
-                                    </div>
+                                    <input type="radio" id="better-discussions" value="betterDiscussions" name="breakUp">
+                                    <label for="better-discussions">You met someone else who has better discussions</label>
                                 </div>
                             </div>
                         </div>
@@ -130,6 +123,7 @@
                 <input type="submit" value="Generate your text!">
             </form>
         </section>
+
         <section class="phone">
             <div class="iphone">
                 <button class="btn home" title="Home"></button>
@@ -146,7 +140,6 @@
                             <i class="fas fa-circle dot dot2"></i>
                             <i class="fas fa-circle dot dot3"></i>
                         </div>
-                        <!-- output goes here -->
                     </div>
                     <button class="btn btn__shuffle btn__none" id="btnShuffle">Different text? <i class="fas fa-arrow-circle-up"></i></button>
                     <div class="audio audio-hidden">
@@ -158,6 +151,7 @@
             </div>
         </section>
     </main>
+
     <footer>
         <div class="wrapper">
             <p>&copy; 2018 <a href="https://twitter.com/scott_fuller">Scott Fuller</a></p>

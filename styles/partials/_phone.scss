@@ -48,7 +48,7 @@
     justify-content: space-between;
     i {
         text-align: right;
-        color:#007AFF;
+        color: $indigo;
     }
 }
 
@@ -132,14 +132,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #007AFF;
+    background: $indigo;
     margin: 5px;
     text-align: left;
     color: white;
     padding: 10px;
     border-radius: 20px;
     transition: all 0.2s;
-    // width: 95%;
     &__content {
         margin: 0;
         font-family: $phone-font;
@@ -173,8 +172,6 @@
     transform: rotate(-35deg);
 }
 
-
-
 .iphone-rotate {
     transform: rotate(-90deg);
     position: relative;
@@ -183,10 +180,8 @@
 .screen-rotate {
     transform: rotate(90deg);
     position: absolute;
-    // right: -143px;
     top: 140px;
     left: 0;
-    // width: 330px;
     max-width: 150%;
 }
 

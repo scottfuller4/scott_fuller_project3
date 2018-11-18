@@ -8,7 +8,6 @@ fieldset {
 }
 
 //Names section
-
 .names {
     background: linear-gradient(10deg, $background-shade 60%, $background-color 40%);
     fieldset {
@@ -136,7 +135,6 @@ input[type=radio] + label {
 	display: inline-block;
 	background-size: 20px;
     padding-left: 25px;
-    // background-size: 20px;
     margin: 20px 20px 0 20px;
 }
 
@@ -144,12 +142,11 @@ input[type=radio]:checked + label {
     // Checkbox by Arthur Shlain from the Noun Project
     background: url(../assets/checkbox.svg) left top no-repeat;
     background-size: 22px;
-    // width: 25px;
 }
 
 .breakup-container__option input[type=radio] + label {
     background-position: bottom center;
     line-height: 3rem;
     margin: 0;
-    padding-bottom: 30px;
+    padding: 0 0 30px 0;
 }
