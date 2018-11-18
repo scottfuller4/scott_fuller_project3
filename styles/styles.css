@@ -276,9 +276,11 @@ fieldset {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin: 0 10px; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 10px;
+  border: 2px solid blue; }
   .breakup-container__option img {
     width: 100px; }
 
@@ -329,61 +331,24 @@ input[type=submit]:hover {
   -webkit-box-shadow: 5px -5px #e3d0d8;
   box-shadow: 5px -5px #e3d0d8; }
 
-/* Customize the label (the container) */
-.select {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-/* Hide the browser's default radio button */
-.select input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0; }
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  bottom: -50px;
-  left: calc(50% - 12.5px);
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 30%; }
-
-/* On mouse-over, add a grey background color */
-.select:hover input ~ .checkmark {
-  background-color: #e3d0d8; }
-
-/* When the radio button is checked, add a blue background */
-.select input:checked ~ .checkmark {
-  background-color: #2196F3; }
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.select:after {
-  content: "";
-  position: absolute;
+input[type=radio] {
   display: none; }
 
-/* Show the indicator (dot/circle) when checked */
-.select input:checked ~ .checkmark:after {
-  display: block; }
+input[type=radio] + label {
+  background: url(../assets/box.svg) left top no-repeat;
+  display: inline-block;
+  background-size: 20px;
+  padding-left: 25px;
+  margin: 20px 20px 0 20px;
+  font-size: 2rem; }
 
-/* Style the indicator (dot/circle) */
-.select .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-  z-index: 2; }
+input[type=radio]:checked + label {
+  background: url(../assets/checkbox.svg) left top no-repeat;
+  background-size: 20px; }
+
+.breakup-container__option input[type=radio] + label {
+  background-position: left bottom;
+  line-height: 3rem; }
 
 .phone {
   display: -webkit-box;

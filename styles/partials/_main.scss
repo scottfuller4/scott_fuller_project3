@@ -58,8 +58,9 @@ fieldset {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 10px;
+    border: 2px solid blue;
     img {
         width: 100px;
 
@@ -116,67 +117,31 @@ input[type=submit]:hover {
     box-shadow: 5px -5px $background-shade;
 }
 
-// custom radio buttons
- /* Customize the label (the container) */
-.select {
-  display: block;
-  position: relative;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+
+//Custom radio buttons
+input[type=radio] {
+    display: none;
 }
 
-/* Hide the browser's default radio button */
-.select input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+input[type=radio] + label {
+    // Box by Arthur Shlain from the Noun Project
+	background: url(../assets/box.svg) left top no-repeat;
+	display: inline-block;
+	background-size: 20px;
+    padding-left: 25px;
+    // background-size: 20px;
+    margin: 20px 20px 0 20px;
+    font-size: 2rem;
 }
 
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  bottom: -50px;
-  left: calc(50% - 12.5px);
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 30%;
+input[type=radio]:checked + label {
+    // Checkbox by Arthur Shlain from the Noun Project
+    background: url(../assets/checkbox.svg) left top no-repeat;
+    background-size: 20px;
+    // width: 25px;
 }
 
-/* On mouse-over, add a grey background color */
-.select:hover input ~ .checkmark {
-  background-color: $background-shade;
+.breakup-container__option input[type=radio] + label {
+    background-position: left bottom;
+    line-height: 3rem;
 }
-
-/* When the radio button is checked, add a blue background */
-.select input:checked ~ .checkmark, {
-  background-color: #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.select:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.select input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.select .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-  z-index: 2;
-} 

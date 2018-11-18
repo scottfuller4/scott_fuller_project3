@@ -48,7 +48,7 @@
                                     <!-- Broken Heart by Gabriele Malaspina from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="match" value="match" name="breakUp">
-                                        <span class="checkmark"></span>
+                                        <!-- <span class="checkmark"></span> -->
                                         <label for="match">You aren't a match</label>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@
                                     <!-- microphones by Panda Icons from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="song-laugh" value="songLaugh" name="breakUp">
-                                        <span class="checkmark"></span>
+                                        <!-- <span class="checkmark"></span> -->
                                         <label for="song-laugh">The songs you wrote about them make you laugh</label>
                                     </div>
                                 </div>
@@ -66,7 +66,7 @@
                                     <!-- Ring by Panda Icons from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="engagement" value="engagement" name="breakUp">
-                                        <span class="checkmark"></span>
+                                        <!-- <span class="checkmark"></span> -->
                                         <label for="engagement">You rushed into an engagement</label>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                     <!-- message by Gabriele Malaspina from the Noun Project -->
                                     <div class="select">
                                         <input type="radio" id="better-discussions" value="better-discussions" name="breakUp">
-                                        <span class="checkmark"></span>
+                                        <!-- <span class="checkmark"></span> -->
                                         <label for="better-discussions">You met someone else who has better discussions</label>
                                     </div>
                                 </div>
@@ -88,12 +88,12 @@
                         <div class="wrapper">
                             <div class="teachings-container">
                                 <h3>What did they teach you?</h3>
-                                <label for="love">Love</label>
                                 <input type="radio" id="love" value="love" name="teach">
-                                <label for="patience">Patience</label>
+                                <label for="love">Love</label>
                                 <input type="radio" id="patience" value="patience" name="teach">
-                                <label for="pain">Pain</label>
+                                <label for="patience">Patience</label>
                                 <input type="radio" id="pain" value="pain" name="teach">
+                                <label for="pain">Pain</label>
                             </div>
                         </div>
                     </fieldset>
@@ -103,10 +103,14 @@
                         <div class="wrapper">
                             <div class="heartbreak-container">
                                 <h3>Who's breaking up with who?</h3>
-                                <label for="heart-breaker"><span class="capitalize">You're</span> breaking up with them</label>
-                                <input type="radio" id="heart-breaker" value="true" name="heartBreak">
-                                <label for="heart-broken"><span class="capitalize">They're</span> breaking up with you</label>
-                                <input type="radio" id="heart-broken" value="false" name="heartBreak">
+                                <div class="heart-breaker">
+                                    <input type="radio" id="heart-breaker" value="true" name="heartBreak">
+                                    <label for="heart-breaker"><span class="capitalize">You're</span> breaking up with them</label>
+                                </div>
+                                <div class="heart-broken">
+                                    <input type="radio" id="heart-broken" value="false" name="heartBreak">
+                                    <label for="heart-broken"><span class="capitalize">They're</span> breaking up with you</label>
+                                </div>
                             </div>
                         </div>
                     </fieldset>
@@ -115,11 +119,11 @@
                     <fieldset>
                         <div class="wrapper">
                             <div class="grateful-container">
-                                <h3>Are you grateful for your (future) ex?</h3>
-                                <label for="grateful-yes">Yes</label>
+                                <h3>Are you grateful for your (soon-to-be) ex?</h3>
                                 <input type="radio" id="grateful-yes" value="true" name="grateful">
-                                <label for="grateful-no">No</label>
+                                <label for="grateful-yes">Yes</label>
                                 <input type="radio" id="grateful-no" value="false" name="grateful">
+                                <label for="grateful-no">No</label>
                             </div>
                         </div>
                     </fieldset>
