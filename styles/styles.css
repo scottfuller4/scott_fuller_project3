@@ -139,7 +139,8 @@ body {
   font-size: 2rem;
   background: #bb91b5;
   text-align: center;
-  font-family: "Questrial", sans-serif; }
+  font-family: "Questrial", sans-serif;
+  overflow-x: hidden; }
 
 .wrapper {
   max-width: 1280px;
@@ -161,7 +162,7 @@ header {
   height: 100vh;
   background-image: url(../assets/album.jpg);
   background-size: cover;
-  background-repeat: none;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,6 +433,26 @@ input[type=radio]:checked + label {
   height: 35px;
   border: 2px solid #525c6b; }
 
+.home::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e3d0d8;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none; }
+
+.home:hover::after {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out; }
+
 .silence, .volume-up, .volume-down {
   background: #525c6b;
   width: 1px;
@@ -596,6 +617,13 @@ footer {
 @media (max-width: 836px) {
   .wrapper {
     width: 90%; }
+  .header-container {
+    width: 100%;
+    padding: 20px 10px 40px 10px; }
+    .header-container h2 {
+      font-size: 6rem; }
+    .header-container h1 {
+      font-size: 2.2rem; }
   .names {
     background: -webkit-linear-gradient(80deg, #e3d0d8 70%, #bb91b5 30%);
     background: -o-linear-gradient(80deg, #e3d0d8 70%, #bb91b5 30%);
@@ -606,6 +634,9 @@ footer {
     margin-left: 50px; } }
 
 @media (max-width: 685px) {
+  header {
+    height: 70vh;
+    background-position: center; }
   .teachings {
     background: -webkit-linear-gradient(160deg, #e3d0d8 0%, #e3d0d8 70%, #bb91b5 70%, #bb91b5 100%);
     background: -o-linear-gradient(160deg, #e3d0d8 0%, #e3d0d8 70%, #bb91b5 70%, #bb91b5 100%);
@@ -637,6 +668,15 @@ footer {
     margin: 50px auto; } }
 
 @media (max-width: 653px) {
+  .header-container {
+    width: 90%;
+    padding: 30px; }
+    .header-container h2 {
+      font-size: 5rem;
+      line-height: 4.5rem;
+      margin-bottom: 20px; }
+    .header-container h1 {
+      line-height: 3rem; }
   fieldset {
     padding: 50px 0; }
     fieldset h3 {
@@ -650,7 +690,9 @@ footer {
   .hidden-label {
     display: inline-block; }
   .breakup-container__option {
-    width: 100%; } }
+    width: 100%; }
+  .breakup-container__option input[type=radio] + label {
+    padding-left: 0; } }
 
 @media (max-width: 505px) {
   fieldset h3 {

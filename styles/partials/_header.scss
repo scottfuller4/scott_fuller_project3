@@ -2,7 +2,7 @@ header {
     height: 100vh;
     background-image: url(../assets/album.jpg);
     background-size: cover;
-    background-repeat: none;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     .wrapper{
@@ -12,22 +12,10 @@ header {
     }
 }
 
-// .header-container {
-//     width: 600px;
-//     background: rgba(187,145,181,0.5);
-//     // background: rgba(227,208,216, 0.5);
-//     border: 5px solid $background-shade;
-//     padding: 50px 0;
-//     box-shadow: 10px -10px $background-shade, 20px -20px $background-shade, 30px -30px $background-shade, 40px -40px $background-shade, 50px -50px $background-shade;
-//     margin: 100px auto 50px auto;
-//     color: $background-shade;
-// }
-
 .header-container {
     width: 700px;
     background: rgba(187,145,181, 0.92);
     margin: 5px;
-    // text-align: left;
     color: #212121;
     padding: 50px 50px 70px 50px;
     border-radius: 100px;

@@ -14,6 +14,17 @@
         width: 90%;
     }
 
+    .header-container {
+        width: 100%;
+        padding: 20px 10px 40px 10px;
+        h2 {
+            font-size: 6rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+
     .names {
         background: linear-gradient(10deg, $background-shade 70%, $background-color 30%);
     }
@@ -29,6 +40,14 @@
 }
 
 @media (max-width: 685px) {
+    header {
+    //    background-size: contain;
+       height: 70vh;
+       background-position: center;
+    //    background-repeat: no-repeat;
+    
+    }
+
     .teachings {
         background: linear-gradient(-70deg, $background-shade 0%, $background-shade 70%, $background-color 70%, $background-color 100%);
         &-container {
@@ -62,6 +81,19 @@
 }
 
 @media (max-width: 653px) {
+    .header-container {
+        width: 90%;
+        padding: 30px;
+        h2 {
+            font-size: 5rem;
+            line-height: 4.5rem;
+            margin-bottom: 20px;
+        }
+        h1 {
+            line-height: 3rem;
+        }
+    }
+    
     fieldset {
         padding: 50px 0;
         h3 {
@@ -88,6 +120,10 @@
 
     .breakup-container__option {
         width: 100%;
+    }
+
+    .breakup-container__option input[type=radio] + label {
+        padding-left: 0;
     }
 }
 

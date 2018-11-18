@@ -66,6 +66,24 @@
     border: 2px solid $shuttle-gray;
 }
 
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $background-shade;
+    transition: none;
+}
+
+.home:hover::after {
+    width: 120%;
+    background-color: rgba(255,255,255,0);
+    transition: all 1s ease-out;
+}
+
 
 .silence, .volume-up, .volume-down {
     background: $shuttle-gray;

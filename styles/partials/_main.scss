@@ -65,7 +65,6 @@ fieldset {
     align-items: center;
     justify-content: space-between;
     margin: 0 10px;
-    // border: 2px solid blue;
     img {
         width: 100px;
     }
@@ -95,8 +94,6 @@ fieldset {
     }
     &-container {
         width: 60%;
-        // text-align: left;
-        // border: 2px solid red;
     }
 }
 
@@ -108,7 +105,7 @@ fieldset {
     box-shadow: 10px -10px $background-shade, 20px -20px $background-shade, 30px -30px $background-shade, 40px -40px $background-shade, 50px -50px $background-shade;
     margin: 100px auto 50px auto;
     h3 {
-            padding: 0 20px;
+        padding: 0 20px;
     }
 }
 
